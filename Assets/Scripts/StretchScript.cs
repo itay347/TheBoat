@@ -6,6 +6,7 @@ public class StretchScript : MonoBehaviour {
     public float orthographicSize = 4;
     public float aspect = 0.6f;
 
+#if UNITY_ANDROID
     void Start()
     {
         Camera.main.projectionMatrix = Matrix4x4.Ortho(
@@ -13,5 +14,5 @@ public class StretchScript : MonoBehaviour {
                 -orthographicSize, orthographicSize,
                 Camera.main.nearClipPlane, Camera.main.farClipPlane);
     }
-
+#endif
 }
