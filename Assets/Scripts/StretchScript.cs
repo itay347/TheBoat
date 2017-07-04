@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+// Source: http://answers.unity3d.com/questions/464487/windowed-game-to-fullscreen.html
 public class StretchScript : MonoBehaviour {
 
     public float orthographicSize = 4;
